@@ -20,10 +20,8 @@ fun AppNavGraph(
 ) {
     NavHost(
         navController = navController,
-        // Pass the String route here
         startDestination = Routes.HOME_INIT
     ) {
-        // Use the route = "" parameter format instead of generic types
         composable(route = Routes.HOME_INIT) {
             HomeInitScreen(
                 onNavigateToTasks = { navController.navigate(Routes.TASKS) }
